@@ -5,7 +5,7 @@
 // #include <string>
 using namespace std;
 
-#define int long long
+#define int long long int
 
 void solve()
 {

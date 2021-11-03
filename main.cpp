@@ -5,11 +5,21 @@
 // #include <string>
 using namespace std;
 
-#define int long long
+#define int long long int
 
 void solve()
 {
-    
+    int n;
+    int arr[n];
+    char col[n];
+    for(int i=0; i<n; i++) cin>>arr[i];
+    string str;
+    cin>>str;
+    for(int i=0; i<n; i++) col[i]=str[i];
+
+    for(int i=1; i<n; i++){
+        
+    }
 }
 
 int32_t main()
