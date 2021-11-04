@@ -9,7 +9,9 @@ using namespace std;
 
 void solve()
 {
-    
+    int n;
+    cin>>n;
+    cout<<n<<end;
 }
 
 int32_t main()
