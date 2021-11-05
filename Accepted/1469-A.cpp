@@ -2,7 +2,7 @@
 // #include <cmath>
 // #include <queue>
 // #include <stack>
-#include <string>
+// #include <string>
 using namespace std;
 
 #define int long long int
@@ -12,21 +12,14 @@ void solve()
     string str;
     cin>>str;
     int n=str.length();
-    int qns=0;
 
-    int check=0;
+    int qns=0;
     for(int i=0; i<n; i++){
         if(str[i]=='?') qns++;
-        else if(str[i]=='(') check=1;
-        else{
-            if(check==0){
-                cout<<"NO"<<endl;
-                return;
-            }
-        }
     }
-    if(qns%2==0) cout<<"YES"<<endl;
-    else cout<<"NO"<<endl;   
+
+    if(qns%2!=0 || str[0]==')' || str[n-1]=='(') cout<<"NO"<<endl;
+    else cout<<"YES"<<endl;
 }
 
 int32_t main()
