@@ -13,5 +13,5 @@ def translate(word):
             translation += letter
     return translation
 
-word = input("Enter the word to translate: ")
-print(translate(word))
+#word = input("Enter the word to translate: ")
+#print(translate(word))

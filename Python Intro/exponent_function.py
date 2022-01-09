@@ -4,4 +4,4 @@ def exponent(a, b):
         result *= a
     return result
 
-print(exponent(2, 3)) 
+#print(exponent(2, 3)) 

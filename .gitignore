@@ -3,3 +3,4 @@ tasks.json
 main.exe
 .catalyst
 .temp
+__pycache__
