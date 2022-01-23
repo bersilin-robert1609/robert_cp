@@ -1,13 +1,16 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-#define long long int
+#define short int
+#define int long long int
+#define uint unsigned long long int
 #define endl "\n"
 
 const int MOD = 1e9+7;
 
 void solve()
 {
+    int n; cin>>n;
     
 }
 
