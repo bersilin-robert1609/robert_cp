@@ -10,7 +10,26 @@ const int MOD = 1e9+7;
 
 void solve()
 {
-    
+    int n, l, r, k;
+    cin>>n>>l>>r>>k;
+
+    vector<int> a(n);
+    for(auto &i:a) cin>>i;
+
+    sort(a.begin(), a.end());
+
+    int it=0;
+    while(a[it]<l) it++;
+
+    int count=0;
+
+    while((k-a[it]>=0) && a[it]<=r && it<n){
+        k = k-a[it];
+        count++;
+        it++;
+    }
+
+    cout<<count<<endl;
 }
 
 int32_t main()
