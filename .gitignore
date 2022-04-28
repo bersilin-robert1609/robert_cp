@@ -4,3 +4,4 @@ main.exe
 .catalyst
 .temp
 __pycache__
+.vs
