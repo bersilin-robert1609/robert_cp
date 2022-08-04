@@ -15,8 +15,32 @@ void solve()
 
     vector<string> a(n);
     for(auto &i : a) cin>>i;
-
-    
+    vector<int> ans(n);
+    unordered_map<string, bool> present;
+    for(int i=0; i<n; i++)
+    {
+        present[a[i]] = true;
+    }
+    for(int i=0; i<n; i++)
+    {
+        string str = a[i];
+        for(int j=1; j<str.size(); j++)
+        {
+            string str1 = str.substr(0, j);
+            string str2 = str.substr(j, str.size()-j);
+            if(present[str1] && present[str2])
+            {
+                ans[i] = 1;
+                break;
+            }
+        }
+    }
+    for(int i=0; i<n; i++)
+    {
+        cout<<ans[i];
+    }
+    cout<<endl;
+    return;
 }
 
 int32_t main()
